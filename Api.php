@@ -36,7 +36,7 @@ for ($i=0;$i<count($columns);$i++) {
 // create SQL based on HTTP method
 switch ($method) {
     case 'GET':
-        $sql = "select * from `$table`".($key?" WHERE id=$key":''); break;
+        $sql = "select * from country WHERE Population =$key"; break;
     case 'PUT':
         $sql = "update `$table` set $set where id=$key"; break;
     case 'POST':
